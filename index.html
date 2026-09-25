@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Infanta Princy - SOC Analyst & Cybersecurity Portfolio">
+    <meta name="theme-color" content="#0f172a">
+    <title>Infanta Princy | SOC Analyst & Cybersecurity Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header with Theme Toggle -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <span class="logo-bracket">&lt;</span>
+                    <span class="logo-text">princy.dev</span>
+                    <span class="logo-bracket">/&gt;</span>
+                </div>
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark/light mode">
+                    <span class="toggle-icon">🌙</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">Infanta Princy</h1>
+                    <p class="hero-subtitle">SOC Analyst | Threat Detective | Security Operations</p>
+                    <p class="hero-description">
+                        Investigating security threats, analyzing logs, and building automation solutions. 
+                        Passionate about threat detection, cloud security, and the intersection of AI and cybersecurity.
+                    </p>
+                    <div class="hero-cta">
+                        <a href="#projects" class="btn btn-primary">View Projects</a>
+                        <a href="#contact" class="btn btn-secondary">Get in Touch</a>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="terminal-box">
+                        <div class="terminal-header">
+                            <span class="terminal-dot red"></span>
+                            <span class="terminal-dot yellow"></span>
+                            <span class="terminal-dot green"></span>
+                        </div>
+                        <div class="terminal-content">
+                            <div class="terminal-line">
+                                <span class="terminal-prompt">$</span>
+                                <span class="terminal-text">whoami</span>
+                            </div>
+                            <div class="terminal-line">
+                                <span class="terminal-output">soc_analyst</span>
+                            </div>
+                            <div class="terminal-line">
+                                <span class="terminal-prompt">$</span>
+                                <span class="terminal-text">cat skills.txt</span>
+                            </div>
+                            <div class="terminal-line">
+                                <span class="terminal-output">threat_detection | log_analysis | automation</span>
+                            </div>
+                            <div class="terminal-line">
+                                <span class="terminal-prompt">$</span>
+                                <span class="terminal-text cursor"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <h2 class="section-title">About</h2>
+            <div class="about-content">
+                <p>
+                    I'm a SOC Analyst at Accenture with 2.5 years of hands-on experience in security operations and incident response. 
+                    My day-to-day work involves investigating security alerts, triaging incidents, and analyzing logs to identify threats.
+                </p>
+                <p>
+                    What drives me is the challenge of detection and response—understanding *why* threats happen and building better 
+                    systems to catch them. I'm particularly interested in threat detection techniques, security automation, and how AI 
+                    can enhance security operations.
+                </p>
+                <p>
+                    Beyond production work, I actively build personal projects and labs to deepen my skills. I've completed 35+ security 
+                    labs on TryHackMe, participated in CTF competitions, and hold certifications in AWS Cloud and AI. My next goal is to 
+                    transition into a Cloud Security or Security Engineer role.
+                </p>
+                <div class="about-highlights">
+                    <div class="highlight">
+                        <span class="highlight-icon">🎯</span>
+                        <h3>Current Focus</h3>
+                        <p>Cloud security, threat detection, security automation with Python</p>
+                    </div>
+                    <div class="highlight">
+                        <span class="highlight-icon">🔧</span>
+                        <h3>Learning</h3>
+                        <p>AWS architecture, AI integration in security, incident response automation</p>
+                    </div>
+                    <div class="highlight">
+                        <span class="highlight-icon">🚀</span>
+                        <h3>Goal</h3>
+                        <p>Transition to Cloud Security Analyst or Security Engineer role</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects" id="projects">
+        <div class="container">
+            <h2 class="section-title">Projects</h2>
+            <div class="projects-grid">
+                <!-- Project 1: Log Analysis -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3 class="project-title">Log Analysis Investigation</h3>
+                        <span class="project-tag">Threat Detection</span>
+                    </div>
+                    <p class="project-excerpt">
+                        Comprehensive log analysis to identify and investigate security threats and anomalies.
+                    </p>
+                    <button class="btn-expand" onclick="toggleProject(event)">View Details →</button>
+                    
+                    <div class="project-details" style="display: none;">
+                        <div class="detail-section">
+                            <h4>Project Overview</h4>
+                            <p>[Add your project details here - what was the scenario/dataset?]</p>
+                        </div>
+
+                        <div class="detail-section">
+                            <h4>Why I Built It</h4>
+                            <p>To develop practical skills in log analysis, a core competency for SOC analysts. Real-world threat detection relies on the ability to parse through logs, identify patterns, and correlate events to detect suspicious activity.</p>
+                        </div>
+
+                        <div class="detail-section">
+                            <h4>Objective</h4>
+                            <p>[Specify your investigation objectives - e.g., "Identify unauthorized access attempts", "Track lateral movement", "Detect data exfiltration"]</p>
+                        </div>
+
+                        <div class="detail-section">
+                            <h4>Tools & Technologies</h4>
+                            <ul class="tech-list">
+                                <li>Log Analysis Tools</li>
+                                <li>Splunk / ELK Stack</li>
+                                <li>Regular Expressions</li>
+                                <li>OSINT Tools</li>
+                                <li>Threat Intelligence</li>
+                            </ul>
+                        </div>
+
+                        <div class="detail-section">
+                            <h4>What I Did</h4>
+                            <ul class="process-list">
+                                <li>Collected and parsed log files from multiple sources</li>
+                                <li>Created search queries to identify anomalies</li>
+                                <li>Investigated suspicious events and correlated data</li>
+                                <li>Documented findings and created IOC list</li>
+                                <li>Prepared formal investigation report</li>
+                            </ul>
+                        </div>
+
+                        <div class="detail-section">
+                            <h4>Skills Developed</h4>
+                            <ul class="skills-list">
+                                <li>Log parsing and analysis</li>
+                                <li>Pattern recognition</li>
+                                <li>OSINT and threat research</li>
+                                <li>Incident documentation</li>
+                                <li>Technical communication</li>
+                            </ul>
+                        </div>
+
+                        <div class="detail-section">
+                            <h4>Outcome & Impact</h4>
+                            <p>[Describe what you found, how many indicators of compromise, what was the threat, etc.]</p>
+                        </div>
+
+                        <div class="detail-section">
+                            <h4>Real-World Relevance</h4>
+                            <p>Log analysis is a fundamental skill in security operations. Every SOC analyst must be able to efficiently search logs, identify anomalies, and investigate suspicious patterns. This project demonstrates proficiency in a core SOC capability.</p>
+                        </div>
+
+                        <div class="evidence-section">
+                            <h4>Evidence & Documentation</h4>
+                            <div class="evidence-links">
+                                <a href="#" class="evidence-placeholder">📄 Investigation Report</a>
+                                <a href="#" class="evidence-placeholder">📸 Analysis Screenshots</a>
+                                <a href="#" class="evidence-placeholder">📋 IOC List</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2: Home SOC Lab -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3 class="project-title">Home SOC Lab: Threat Detection</h3>
+                        <span class="project-tag">Lab Environment</span>
+                    </div>
+                    <p class="project-excerpt">
+                        Built a mini SOC environment to simulate threat detection scenarios and practice incident response.
+                    </p>
+                    <button class="btn-expand" onclick="toggleProject(event)">View Details →</button>
+                    
+                    <div class="project-details" style="display: none;">
+                        <div class="detail-section">
+                            <h4>Project Overview</h4>
+                            <p>Created a home lab environment to simulate a Security Operations Center, enabling hands-on practice with real security tools and threat detection workflows.</p>
+                        </div>
+
+                        <div class="detail-section">
+                            <h4>Why I Built It</h4>
+                            <p>Practical experience with SOC tools is crucial. A home lab provides a safe sandbox to experiment with SIEM platforms, log aggregation, alerting systems, and threat detection techniques without affecting production systems.</p>
+                        </div>
+
+                        <div class="detail-section">
+                            <h4>Objective</h4>
+                            <p>
+                                Create a functional threat detection pipeline that can:
+                                <ul>
+                                    <li>Collect logs from multiple sources</li>
+                                    <li>Aggregate and correlate events</li>
+                                    <li>Generate alerts for suspicious activity</li>
+                                    <li>Enable rapid investigation and response</li>
+                                </ul>
+                            </p>
+                        </div>
+
+                        <div class="detail-section">
+                            <h4>Tools & Technologies</h4>
+                            <ul class="tech-list">
+                                <li>SIEM Platform (Splunk / ELK / Wazuh)</li>
+                                <li>Log Sources (Windows Event Logs, Syslog, etc.)</li>
+                                <li>Alerting Rules & Correlation</li>
+                                <li>Threat Intelligence Integration</li>
+                                <li>Virtualization / Lab Environment</li>
+                            </ul>
+                        </div>
+
+                        <div class="detail-section">
+                            <h4>What I Did</h4>
+                            <ul class="process-list">
+                                <li>Set up SIEM platform and configured data ingestion</li>
+                                <li>Deployed log forwarding agents on lab systems</li>
+                                <li>Created custom detection rules for common attack patterns</li>
+                                <li>Simulated attack scenarios to test detection capabilities</li>
+                                <li>Documented the architecture and procedures</li>
+                            </ul>
+                        </div>
+
+                        <div class="detail-section">
+                            <h4>Skills Developed</h4>
+                            <ul class="skills-list">
+                                <li>SIEM configuration and management</li>
+                                <li>Alert rule development</li>
+                                <li>Log correlation and analysis</li>
+                                <li>Threat simulation and testing</li>
+                                <li>Lab environment design</li>
+                            </ul>
+                        </div>
+
+                        <div class="detail-section">
+                            <h4>Outcome & Impact</h4>
+                            <p>
+                                Successfully created a functional SOC lab that:
+                                <ul>
+                                    <li>Demonstrates SIEM proficiency</li>
+                                    <li>Enables continuous learning and testing</li>
+                                    <li>Provides practical experience for interview discussions</li>
+                                </ul>
+                            </p>
+                        </div>
+
+                        <div class="detail-section">
+                            <h4>Real-World Relevance</h4>
+                            <p>Most modern SOC teams use SIEM platforms. This lab demonstrates hands-on experience with the tools and workflows used in professional environments, making this a valuable addition to your skillset for SOC roles.</p>
+                        </div>
+
+                        <div class="evidence-section">
+                            <h4>Evidence & Documentation</h4>
+                            <div class="evidence-links">
+                                <a href="#" class="evidence-placeholder">📄 Lab Setup Guide</a>
+                                <a href="#" class="evidence-placeholder">📸 Architecture Diagrams</a>
+                                <a href="#" class="evidence-placeholder">📋 Detection Rules</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3: Security Automation -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3 class="project-title">Security Automation with Python</h3>
+                        <span class="project-tag">Automation</span>
+                    </div>
+                    <p class="project-excerpt">
+                        Built automated threat analysis tools using Python and public threat intelligence APIs.
+                    </p>
+                    <button class="btn-expand" onclick="toggleProject(event)">View Details →</button>
+                    
+                    <div class="project-details" style="display: none;">
+                        <div class="detail-section">
+                            <h4>Project Overview</h4>
+                            <p>Developed Python-based automation tools to streamline threat analysis, leveraging VirusTotal API and other threat intelligence sources to enrich indicators of compromise and automate investigation workflows.</p>
+                        </div>
+
+                        <div class="detail-section">
+                            <h4>Why I Built It</h4>
+                            <p>
+                                Manual threat analysis is time-consuming and error-prone. Automation enables SOC analysts to:
+                                <ul>
+                                    <li>Quickly enrich indicators with threat intelligence</li>
+                                    <li>Reduce manual workload</li>
+                                    <li>Improve response times</li>
+                                    <li>Scale threat detection capabilities</li>
+                                </ul>
+                            </p>
+                        </div>
+
+                        <div class="detail-section">
+                            <h4>Objective</h4>
+                            <p>
+                                Create automated tools that:
+                                <ul>
+                                    <li>Accept indicators of compromise (IPs, hashes, URLs)</li>
+                                    <li>Query threat intelligence APIs</li>
+                                    <li>Aggregate and analyze results</li>
+                                    <li>Generate actionable threat reports</li>
+                                </ul>
+                            </p>
+                        </div>
+
+                        <div class="detail-section">
+                            <h4>Tools & Technologies</h4>
+                            <ul class="tech-list">
+                                <li>Python 3</li>
+                                <li>VirusTotal API</li>
+                                <li>JSON Data Processing</li>
+                                <li>API Integration</li>
+                                <li>GitHub Version Control</li>
+                            </ul>
+                        </div>
+
+                        <div class="detail-section">
+                            <h4>What I Did</h4>
+                            <ul class="process-list">
+                                <li>Designed and developed Python automation scripts</li>
+                                <li>Integrated with VirusTotal API for threat intelligence</li>
+                                <li>Implemented JSON parsing for data processing</li>
+                                <li>Created command-line interface for easy usage</li>
+                                <li>Published code on GitHub with documentation</li>
+                                <li>Tested with real indicators to validate results</li>
+                            </ul>
+                        </div>
+
+                        <div class="detail-section">
+                            <h4>Skills Developed</h4>
+                            <ul class="skills-list">
+                                <li>Python programming</li>
+                                <li>API integration and REST calls</li>
+                                <li>JSON data parsing</li>
+                                <li>Threat intelligence research</li>
+                                <li>Tool development and documentation</li>
+                                <li>Version control with Git/GitHub</li>
+                            </ul>
+                        </div>
+
+                        <div class="detail-section">
+                            <h4>Outcome & Impact</h4>
+                            <p>
+                                Successfully created reusable automation tools that:
+                                <ul>
+                                    <li>Demonstrate software development skills</li>
+                                    <li>Show understanding of threat intelligence workflows</li>
+                                    <li>Can be applied to real SOC operations</li>
+                                    <li>Are publicly available for use and feedback</li>
+                                </ul>
+                            </p>
+                        </div>
+
+                        <div class="detail-section">
+                            <h4>Real-World Relevance</h4>
+                            <p>
+                                Security automation is a high-demand skill. This project demonstrates your ability to write Python code to solve real security problems, 
+                                combining software development with security operations knowledge. Many SOC teams look for analysts who can automate workflows and improve team efficiency.
+                            </p>
+                        </div>
+
+                        <div class="evidence-section">
+                            <h4>Evidence & Documentation</h4>
+                            <div class="evidence-links">
+                                <a href="https://github.com/InfantaPrincy" class="evidence-link">🔗 GitHub Repository</a>
+                                <a href="#" class="evidence-placeholder">📄 Code Documentation</a>
+                                <a href="#" class="evidence-placeholder">📸 Demo Screenshots</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Competitions & CTF Section -->
+    <section class="competitions" id="competitions">
+        <div class="container">
+            <h2 class="section-title">Competitions & Hands-On Learning</h2>
+            <div class="competitions-grid">
+                <!-- TryHackMe -->
+                <div class="competition-card">
+                    <div class="competition-header">
+                        <h3>TryHackMe</h3>
+                        <span class="competition-stat">35+</span>
+                    </div>
+                    <p class="competition-subtitle">Cybersecurity Labs Completed</p>
+                    <div class="competition-details">
+                        <div class="detail-row">
+                            <span class="detail-label">Areas Covered:</span>
+                            <ul class="detail-list">
+                                <li>SOC Fundamentals</li>
+                                <li>Networking & TCP/IP</li>
+                                <li>Linux & Windows Systems</li>
+                                <li>Web Security</li>
+                                <li>Digital Forensics</li>
+                                <li>Threat Detection & Incident Response</li>
+                            </ul>
+                        </div>
+                        <div class="detail-row">
+                            <span class="detail-label">What I Learned:</span>
+                            <p>
+                                Completed structured learning paths covering security fundamentals through advanced topics. 
+                                Each lab reinforced practical skills with hands-on challenges and provided feedback on progress.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="competition-links">
+                        <a href="https://tryhackme.com/p/Princy20" class="btn btn-small">View Profile</a>
+                        <a href="#" class="btn btn-small btn-outline">Selected Write-ups</a>
+                    </div>
+                </div>
+
+                <!-- CyLab Security Academy -->
+                <div class="competition-card">
+                    <div class="competition-header">
+                        <h3>CyLab Security Academy</h3>
+                        <span class="competition-stat">20+</span>
+                    </div>
+                    <p class="competition-subtitle">CTF Challenges Completed</p>
+                    <div class="competition-details">
+                        <div class="detail-row">
+                            <span class="detail-label">Challenge Types:</span>
+                            <ul class="detail-list">
+                                <li>Capture the Flag (CTF)</li>
+                                <li>Networking & Protocols</li>
+                                <li>Linux & Windows Security</li>
+                                <li>Web Application Security</li>
+                                <li>Cryptography & Encoding</li>
+                            </ul>
+                        </div>
+                        <div class="detail-row">
+                            <span class="detail-label">What I Learned:</span>
+                            <p>
+                                Developed problem-solving skills through competitive CTF challenges. Each challenge required creativity, 
+                                technical knowledge, and persistence to find flags and solve security puzzles.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="competition-links">
+                        <a href="https://learn.cylabacademy.org/users/AtnaPrincy" class="btn btn-small">View Profile</a>
+                        <a href="#" class="btn btn-small btn-outline">Challenge Write-ups</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section class="certifications" id="certifications">
+        <div class="container">
+            <h2 class="section-title">Certifications</h2>
+            <div class="certifications-grid">
+                <!-- AWS Certifications -->
+                <div class="cert-group">
+                    <h3 class="cert-category">AWS Certifications</h3>
+                    <div class="cert-list">
+                        <div class="cert-item">
+                            <div class="cert-name">AWS Certified AI Practitioner</div>
+                            <div class="cert-meta">Why: Deep interest in AI applications in security operations and threat detection</div>
+                            <a href="#" class="cert-link">📜 View Certificate</a>
+                        </div>
+                        <div class="cert-item">
+                            <div class="cert-name">AWS Certified Cloud Practitioner</div>
+                            <div class="cert-meta">Why: Foundation for cloud security and understanding cloud infrastructure</div>
+                            <a href="#" class="cert-link">📜 View Certificate</a>
+                        </div>
+                        <div class="cert-item">
+                            <div class="cert-name">AWS Certified Solutions Architect – Associate</div>
+                            <div class="cert-meta">Why: Career progression toward cloud security and infrastructure roles</div>
+                            <a href="#" class="cert-link">📜 View Certificate</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Claude Certifications -->
+                <div class="cert-group">
+                    <h3 class="cert-category">Claude Certifications</h3>
+                    <div class="cert-list">
+                        <div class="cert-item">
+                            <div class="cert-name">Claude Certified Architect – Foundation</div>
+                            <div class="cert-meta">Why: Understanding AI architecture and LLM integration</div>
+                            <a href="#" class="cert-link">📜 View Certificate</a>
+                        </div>
+                        <div class="cert-item">
+                            <div class="cert-name">Claude Certified Associate - Foundation</div>
+                            <div class="cert-meta">Why: Core knowledge of Claude capabilities and best practices</div>
+                            <a href="#" class="cert-link">📜 View Certificate</a>
+                        </div>
+                        <div class="cert-item">
+                            <div class="cert-name">Claude Certified Developer - Foundation</div>
+                            <div class="cert-meta">Why: Building AI-powered security tools and automation</div>
+                            <a href="#" class="cert-link">📜 View Certificate</a>
+                        </div>
+                        <div class="cert-item">
+                            <div class="cert-name">Claude Certified Architect - Professional</div>
+                            <div class="cert-meta">Why: Advanced architecture for enterprise security solutions</div>
+                            <a href="#" class="cert-link">📜 View Certificate</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2 class="section-title">Get in Touch</h2>
+            <p class="contact-intro">
+                Interested in discussing security operations, threat detection, or career opportunities? Let's connect.
+            </p>
+            <div class="contact-links">
+                <a href="https://github.com/InfantaPrincy" class="contact-link" title="GitHub">
+                    <span class="contact-icon">💻</span>
+                    <span>GitHub</span>
+                </a>
+                <a href="https://www.linkedin.com/in/infanta-princy-j-b933a91b0" class="contact-link" title="LinkedIn">
+                    <span class="contact-icon">💼</span>
+                    <span>LinkedIn</span>
+                </a>
+                <a href="mailto:atna.joseph20@gmail.com" class="contact-link" title="Email">
+                    <span class="contact-icon">✉️</span>
+                    <span>Email</span>
+                </a>
+                <a href="https://tryhackme.com/p/Princy20" class="contact-link" title="TryHackMe">
+                    <span class="contact-icon">🎯</span>
+                    <span>TryHackMe</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Infanta Princy. Designed for GitHub Pages.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
