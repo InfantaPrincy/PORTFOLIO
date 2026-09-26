@@ -35,6 +35,11 @@ function toggleProject(event) {
         detail.style.display = 'none';
     });
     
+    // Close all other expand buttons
+    document.querySelectorAll('.btn-expand').forEach(btn => {
+        btn.textContent = 'View Details →';
+    });
+    
     // Toggle current project
     if (!isOpen) {
         details.style.display = 'block';
@@ -47,13 +52,16 @@ function toggleProject(event) {
 // Smooth scroll for navigation links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        const target = document.querySelector(this.getAttribute('href'));
-        if (target) {
-            target.scrollIntoView({
-                behavior: 'smooth',
-                block: 'start'
-            });
+        const href = this.getAttribute('href');
+        if (href !== '#') {
+            e.preventDefault();
+            const target = document.querySelector(href);
+            if (target) {
+                target.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            }
         }
     });
 });
@@ -73,8 +81,8 @@ const observer = new IntersectionObserver((entries) => {
     });
 }, observerOptions);
 
-// Observe all project cards and other elements
-document.querySelectorAll('.project-card, .competition-card, .cert-group, .highlight').forEach(el => {
+// Observe all project cards, competition cards, and other elements
+document.querySelectorAll('.project-card, .competition-card, .cert-group, .highlight, .cert-item-with-image').forEach(el => {
     el.style.opacity = '0';
     el.style.transform = 'translateY(20px)';
     el.style.transition = 'opacity 0.6s ease-out, transform 0.6s ease-out';
