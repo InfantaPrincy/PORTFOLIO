@@ -2,7 +2,7 @@
 
 A modern, professional portfolio website showcasing projects, competition participation, and practical learning in cybersecurity and cloud technologies. Built with vanilla HTML, CSS, and JavaScript for easy deployment on GitHub Pages.
 
-**Live Portfolio:** [Your GitHub Pages URL will appear here after deployment]
+**Live Portfolio:** https://infantaprincy.github.io/PORTFOLIO/
 
 ## 📋 Portfolio Overview
 
