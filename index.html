@@ -14,10 +14,18 @@
         <div class="container">
             <div class="header-content">
                 <div class="logo">
-                    <span class="logo-bracket">&lt;</span>
-                    <span class="logo-text">princy.dev</span>
-                    <span class="logo-bracket">/&gt;</span>
+                    <div class="logo-icon">
+                        <span class="logo-letter">P</span>
+                    </div>
+                    <span class="logo-text">Infanta</span>
                 </div>
+                <nav class="nav-menu">
+                    <a href="#about" class="nav-link">About Me</a>
+                    <a href="#projects" class="nav-link">Projects</a>
+                    <a href="#competitions" class="nav-link">Learning</a>
+                    <a href="#blogs" class="nav-link">Blogs</a>
+                    <a href="#contact" class="nav-link">Contact</a>
+                </nav>
                 <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark/light mode">
                     <span class="toggle-icon">🌙</span>
                 </button>
@@ -77,7 +85,7 @@
     <!-- About Section -->
     <section class="about" id="about">
         <div class="container">
-            <h2 class="section-title">About</h2>
+            <h2 class="section-title">About Me</h2>
             <div class="about-content">
                 <p>
                     I'm a SOC Analyst at Accenture with 2.5 years of hands-on experience in security operations and incident response. 
@@ -94,17 +102,17 @@
                     transition into a Cloud Security or Security Engineer role.
                 </p>
                 <div class="about-highlights">
-                    <div class="highlight">
+                    <div class="highlight highlight-blue">
                         <span class="highlight-icon">🎯</span>
                         <h3>Current Focus</h3>
                         <p>Cloud security, threat detection, security automation with Python</p>
                     </div>
-                    <div class="highlight">
+                    <div class="highlight highlight-purple">
                         <span class="highlight-icon">🔧</span>
                         <h3>Learning</h3>
                         <p>AWS architecture, AI integration in security, incident response automation</p>
                     </div>
-                    <div class="highlight">
+                    <div class="highlight highlight-teal">
                         <span class="highlight-icon">🚀</span>
                         <h3>Goal</h3>
                         <p>Transition to Cloud Security Analyst or Security Engineer role</p>
@@ -120,10 +128,10 @@
             <h2 class="section-title">Projects</h2>
             <div class="projects-grid">
                 <!-- Project 1: Log Analysis -->
-                <div class="project-card">
+                <div class="project-card project-card-primary">
                     <div class="project-header">
                         <h3 class="project-title">Log Analysis Investigation</h3>
-                        <span class="project-tag">Threat Detection</span>
+                        <span class="project-tag tag-blue">Threat Detection</span>
                     </div>
                     <p class="project-excerpt">
                         Comprehensive log analysis to identify and investigate security threats and anomalies.
@@ -201,10 +209,10 @@
                 </div>
 
                 <!-- Project 2: Home SOC Lab -->
-                <div class="project-card">
+                <div class="project-card project-card-secondary">
                     <div class="project-header">
                         <h3 class="project-title">Home SOC Lab: Threat Detection</h3>
-                        <span class="project-tag">Lab Environment</span>
+                        <span class="project-tag tag-purple">Lab Environment</span>
                     </div>
                     <p class="project-excerpt">
                         Built a mini SOC environment to simulate threat detection scenarios and practice incident response.
@@ -297,10 +305,10 @@
                 </div>
 
                 <!-- Project 3: Security Automation -->
-                <div class="project-card">
+                <div class="project-card project-card-tertiary">
                     <div class="project-header">
                         <h3 class="project-title">Security Automation with Python</h3>
-                        <span class="project-tag">Automation</span>
+                        <span class="project-tag tag-teal">Automation</span>
                     </div>
                     <p class="project-excerpt">
                         Built automated threat analysis tools using Python and public threat intelligence APIs.
@@ -409,13 +417,13 @@
         </div>
     </section>
 
-    <!-- Competitions & CTF Section -->
+    <!-- Learning Section - CTF & Competitions -->
     <section class="competitions" id="competitions">
         <div class="container">
-            <h2 class="section-title">Competitions & Hands-On Learning</h2>
+            <h2 class="section-title">Practical Learning</h2>
             <div class="competitions-grid">
                 <!-- TryHackMe -->
-                <div class="competition-card">
+                <div class="competition-card competition-card-blue">
                     <div class="competition-header">
                         <h3>TryHackMe</h3>
                         <span class="competition-stat">35+</span>
@@ -448,7 +456,7 @@
                 </div>
 
                 <!-- CyLab Security Academy -->
-                <div class="competition-card">
+                <div class="competition-card competition-card-purple">
                     <div class="competition-header">
                         <h3>CyLab Security Academy</h3>
                         <span class="competition-stat">20+</span>
@@ -482,57 +490,117 @@
         </div>
     </section>
 
-    <!-- Certifications Section -->
-    <section class="certifications" id="certifications">
+    <!-- Learning Section -->
+    <section class="learning" id="learning">
         <div class="container">
             <h2 class="section-title">Certifications</h2>
-            <div class="certifications-grid">
-                <!-- AWS Certifications -->
-                <div class="cert-group">
-                    <h3 class="cert-category">AWS Certifications</h3>
-                    <div class="cert-list">
-                        <div class="cert-item">
-                            <div class="cert-name">AWS Certified AI Practitioner</div>
-                            <div class="cert-meta">Why: Deep interest in AI applications in security operations and threat detection</div>
-                            <a href="#" class="cert-link">📜 View Certificate</a>
+            <div class="learning-content">
+                <p class="learning-intro">
+                    Beyond formal certifications, I invest heavily in hands-on learning and practical skill development through labs, challenges, and real-world projects.
+                </p>
+                <div class="certifications-grid">
+                    <!-- AWS Certifications -->
+                    <div class="cert-group cert-group-blue">
+                        <h3 class="cert-category">AWS Certifications</h3>
+                        <div class="cert-list">
+                            <div class="cert-item-with-image">
+                                <div class="cert-image-container">
+                                    <img src="images/AWS_2.png" alt="AWS Certified AI Practitioner" class="cert-image">
+                                </div>
+                                <div class="cert-info">
+                                    <div class="cert-name">AWS Certified AI Practitioner</div>
+                                    <div class="cert-meta">Deep interest in AI applications in security operations and threat detection</div>
+                                    <a href="images/AWS_AI.png" class="cert-link" target="_blank">📜 View Certificate</a>
+                                </div>
+                            </div>
+                            <div class="cert-item-with-image">
+                                <div class="cert-image-container">
+                                    <img src="images/AWS_1.png" alt="AWS Certified Cloud Practitioner" class="cert-image">
+                                </div>
+                                <div class="cert-info">
+                                    <div class="cert-name">AWS Certified Cloud Practitioner</div>
+                                    <div class="cert-meta">Foundation for cloud security and understanding cloud infrastructure</div>
+                                    <a href="images/AWS_CLOUD.png" class="cert-link" target="_blank">📜 View Certificate</a>
+                                </div>
+                            </div>
+                            <div class="cert-item-with-image">
+                                <div class="cert-image-container">
+                                    <img src="images/AWS_3.png" alt="AWS Certified Cloud Practitioner" class="cert-image">
+                                </div>
+                                <div class="cert-info">
+                                    <div class="cert-name">AWS Certified Solutions Architect – Associate</div>
+                                    <div class="cert-meta">Career progression toward cloud security and infrastructure roles</div>
+                                    <a href="images/AWS_CLOUD.png" class="cert-link" target="_blank">📜 View Certificate</a>
+                                </div>   
+                            </div>
                         </div>
-                        <div class="cert-item">
-                            <div class="cert-name">AWS Certified Cloud Practitioner</div>
-                            <div class="cert-meta">Why: Foundation for cloud security and understanding cloud infrastructure</div>
-                            <a href="#" class="cert-link">📜 View Certificate</a>
-                        </div>
-                        <div class="cert-item">
-                            <div class="cert-name">AWS Certified Solutions Architect – Associate</div>
-                            <div class="cert-meta">Why: Career progression toward cloud security and infrastructure roles</div>
-                            <a href="#" class="cert-link">📜 View Certificate</a>
+                    </div>
+
+                    <!-- Claude Certifications -->
+                    <div class="cert-group cert-group-purple">
+                        <h3 class="cert-category">Claude Certifications</h3>
+                        <div class="cert-list">
+                            <div class="cert-item-with-image">
+                                <div class="cert-image-container">
+                                    <img src="images/Claude_1.png" alt="Claude Certified Associate - Foundation" class="cert-image">
+                                </div>
+                                <div class="cert-info">
+                                    <div class="cert-name">Claude Certified Associate - Foundation</div>
+                                    <div class="cert-meta">Core knowledge of Claude capabilities and best practices</div>
+                                    <a href="images/CLAUDE_ASSOCIATE.png" class="cert-link" target="_blank">📜 View Certificate</a>
+                                </div>
+                            </div>
+                            <div class="cert-item-with-image">
+                                <div class="cert-image-container">
+                                    <img src="images/Claude_2.png" alt="Claude Certified Architect - Foundation" class="cert-image">
+                                </div>
+                                <div class="cert-info">
+                                    <div class="cert-name">Claude Certified Architect – Foundation</div>
+                                    <div class="cert-meta">Understanding AI architecture and LLM integration</div>
+                                    <a href="images/Claude_2.png" class="cert-link" target="_blank">📜 View Certificate </a>
+                                </div>
+                            </div>
+                            <div class="cert-item-with-image">
+                                <div class="cert-image-container">
+                                    <img src="images/Claude_3.png" alt="Claude Certified Developer - Foundation" class="cert-image">
+                                </div>
+                                <div class="cert-info">
+                                    <div class="cert-name">Claude Certified Developer - Foundation</div>
+                                    <div class="cert-meta">Building AI-powered security tools and automation</div>
+                                    <a href="images/Claude_3.png" class="cert-link" target="_blank">📜 View Certificate</a>
+                                </div>
+                            </div>
+                            <div class="cert-item-with-image">
+                                <div class="cert-image-container">
+                                    <img src="images/Claude_4.png" alt="Claude Certified Architect - Professional" class="cert-image">
+                                </div>
+                                <div class="cert-info">
+                                    <div class="cert-name">Claude Certified Architect - Professional</div>
+                                    <div class="cert-meta">Advanced architecture for enterprise security solutions</div>
+                                    <a  href="images/Claude_4.png" class="cert-link" target="_blank">📜 View Certificate</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
+    </section>
 
-                <!-- Claude Certifications -->
-                <div class="cert-group">
-                    <h3 class="cert-category">Claude Certifications</h3>
-                    <div class="cert-list">
-                        <div class="cert-item">
-                            <div class="cert-name">Claude Certified Architect – Foundation</div>
-                            <div class="cert-meta">Why: Understanding AI architecture and LLM integration</div>
-                            <a href="#" class="cert-link">📜 View Certificate</a>
-                        </div>
-                        <div class="cert-item">
-                            <div class="cert-name">Claude Certified Associate - Foundation</div>
-                            <div class="cert-meta">Why: Core knowledge of Claude capabilities and best practices</div>
-                            <a href="#" class="cert-link">📜 View Certificate</a>
-                        </div>
-                        <div class="cert-item">
-                            <div class="cert-name">Claude Certified Developer - Foundation</div>
-                            <div class="cert-meta">Why: Building AI-powered security tools and automation</div>
-                            <a href="#" class="cert-link">📜 View Certificate</a>
-                        </div>
-                        <div class="cert-item">
-                            <div class="cert-name">Claude Certified Architect - Professional</div>
-                            <div class="cert-meta">Why: Advanced architecture for enterprise security solutions</div>
-                            <a href="#" class="cert-link">📜 View Certificate</a>
-                        </div>
+    <!-- Blogs Section -->
+    <section class="blogs" id="blogs">
+        <div class="container">
+            <h2 class="section-title">Blogs & Writing</h2>
+            <div class="blogs-content">
+                <div class="blog-placeholder">
+                    <div class="blog-icon">📝</div>
+                    <h3>Coming Soon</h3>
+                    <p>I'm working on cybersecurity write-ups and technical blogs about threat detection, log analysis, and security automation. Check back soon for in-depth articles and tutorials!</p>
+                    <div class="blog-topics">
+                        <span class="blog-topic">SOC Operations</span>
+                        <span class="blog-topic">Threat Detection</span>
+                        <span class="blog-topic">Python Security Tools</span>
+                        <span class="blog-topic">Cloud Security</span>
                     </div>
                 </div>
             </div>
@@ -547,19 +615,19 @@
                 Interested in discussing security operations, threat detection, or career opportunities? Let's connect.
             </p>
             <div class="contact-links">
-                <a href="https://github.com/InfantaPrincy" class="contact-link" title="GitHub">
+                <a href="https://github.com/InfantaPrincy" class="contact-link contact-link-blue" title="GitHub">
                     <span class="contact-icon">💻</span>
                     <span>GitHub</span>
                 </a>
-                <a href="https://www.linkedin.com/in/infanta-princy-j-b933a91b0" class="contact-link" title="LinkedIn">
+                <a href="https://www.linkedin.com/in/infanta-princy-j-b933a91b0" class="contact-link contact-link-purple" title="LinkedIn">
                     <span class="contact-icon">💼</span>
                     <span>LinkedIn</span>
                 </a>
-                <a href="mailto:atna.joseph20@gmail.com" class="contact-link" title="Email">
+                <a href="mailto:atna.joseph20@gmail.com" class="contact-link contact-link-red" title="Email">
                     <span class="contact-icon">✉️</span>
                     <span>Email</span>
                 </a>
-                <a href="https://tryhackme.com/p/Princy20" class="contact-link" title="TryHackMe">
+                <a href="https://tryhackme.com/p/Princy20" class="contact-link contact-link-green" title="TryHackMe">
                     <span class="contact-icon">🎯</span>
                     <span>TryHackMe</span>
                 </a>
@@ -570,7 +638,7 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2024 Infanta Princy. Designed for GitHub Pages.</p>
+            <p>&copy; 2026 Infanta Princy. Designed for GitHub Pages.</p>
         </div>
     </footer>
 
